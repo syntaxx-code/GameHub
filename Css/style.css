@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 33, 0.904) 0%,
+    rgba(9, 9, 121, 0.932) 32%,
+    rgba(225, 0, 255, 0.822) 100%
+  );
+
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.logo {
+  color: rgb(245, 209, 8);
+  text-shadow: 1px 1px 4px rgba(216, 207, 207, 0.678);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav-bar {
+  width: 40%;
+  display: flex;
+}
+.nav-bar ul {
+  list-style: none;
+  display: inline-block;
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.822);
+  transition: 0.3s ease-in;
+
+  display: inline-block;
+}
+
+.nav-bar a:hover {
+  color: rgb(238, 255, 0);
+  scale: 1.1;
+}
+
+.cover {
+  background-image: url(/Javascript/img-ps4/163.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 16px rgb(255, 255, 255);
+  margin: auto;
+  width: 60%;
+  height: 470px;
+  margin-top: 70px;
+  margin-bottom: 180px;
+  transition: 0.5s linear;
+  border-radius: 10px;
+}
+
+.cover:hover {
+  scale: 0.9;
+}
+
+#games {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden ;
+  
+  
+}
+
+#games .product:hover {
+  scale: 1.1;
+}
+
+.main-text h2 {
+  display: inline-block;
+  color: antiquewhite;
+  letter-spacing: 9px;
+  text-shadow: 1px 1px 5px rgb(8, 1, 1);
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.product {
+  display: flex;
+  flex-flow: column;
+
+  transition: 0.3s ease-in;
+}
+
+.product img {
+  width: 160px;
+  margin-right: 50px;
+  box-shadow: 1px 0px 6px 1px rgb(255, 255, 255);
+}
+
+.product .info {
+  width: 128px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.product .info p {
+  padding: 8px;
+  color: rgb(138, 222, 248);
+  font-weight: 700;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 1.3px;
+}
